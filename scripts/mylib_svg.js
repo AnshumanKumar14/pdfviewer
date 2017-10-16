@@ -31,23 +31,6 @@ function renderPage(num) {
             canvas.innerHTML = '';
             canvas.appendChild(svg);
         });
-
-        /* // Render PDF page into canvas context
-        var renderContext = {
-            canvasContext: ctx,
-            viewport: viewport
-        };
-        var renderTask = page.render(renderContext);
-
-        // Wait for rendering to finish
-        renderTask.promise.then(function () {
-            pageRendering = false;
-            if (pageNumPending !== null) {
-                // New page rendering is pending
-                renderPage(pageNumPending);
-                pageNumPending = null;
-            }
-        }); */
     });
 
     // Update page counters
