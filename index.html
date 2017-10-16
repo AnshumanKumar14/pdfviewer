@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Simple pdf viewer</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.css">
+    <link rel="resource" type="application/l10n" href="locale/locale.properties">
+    <script type="text/javascript" src="scripts/l10n.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+            </a>
+        </div>
+        <div class="section">
+            <div class="status-header">
+                <div class="indicator"></div>
+                <div class="title">Simple PDF viewer using svg and canvas</div>
+            </div>
+            <div class="section" style="text-align:center">
+                <a id="prev" class="button is-primary is-small is-pulled-left">Previous</a>
+                <span id="page_num"></span> /
+                <span id="page_count"></span>
+                <a id="next" class="button is-primary is-small is-pulled-right">Next</a>
+            </div>
+            <div class="section" style="text-align:center">
+                <svg id="content"> </svg>
+                <!-- <canvas id="content"> </canvas> -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/pdf.js"></script>
+    <script type="text/javascript" src="scripts/pdf.worker.js"></script>
+    <script type="text/javascript" src="scripts/mylib_svg.js"></script>
+</body>
+
+</html>
